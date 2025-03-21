@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="SASS/home-style/home-style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>ohmyfood-home</title>
 </head>
 <body>
-    <h>Hello World</h>
+    <header>
+        <div class="headertop">
+            <div class="headertop__shadow">
+             <img class="headertop__shadow--logo-mark" src="images/logo/ohmyfood@2x.svg">
+            </div>
+            <div class="headertop__localisation">
+                <img class="headertop__localisation--logo-pin" src="images/logo/Pin.png">
+                <p class="headertop__localisation--city">Paris, Belleville</p>
+            </div>
+        </div>
+        <article class="headerReserver">
+            <div class="headerReserver__text">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            </div>
+            <button class="headerReserver__btn" href="#restaurant">Explorer nos restaurants</button>
+        </article>
+    </header>
     
 </body>
 </html>

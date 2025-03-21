@@ -1,0 +1,4 @@
+{
+    "editor.overtypeOnPaste": true,
+    "markdown.copyFiles.overwriteBehavior": "nameIncrementally"
+}
