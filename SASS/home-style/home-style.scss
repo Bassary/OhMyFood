@@ -190,6 +190,10 @@ body {
     background-color: $color-card;
     gap: 15px;
 
+    p { 
+        font-size: 17px;
+    }
+
     &__card {
         display: flex;
         flex-direction: column;

@@ -115,6 +115,9 @@ body span {
   background-color: #F6F6F6;
   gap: 15px;
 }
+.restaurant p {
+  font-size: 17px;
+}
 .restaurant__card {
   display: flex;
   flex-direction: column;
