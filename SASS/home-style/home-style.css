@@ -114,6 +114,7 @@ body span {
   flex-direction: column;
   background-color: #F6F6F6;
   gap: 15px;
+  padding-bottom: 60px;
 }
 .restaurant p {
   font-size: 17px;
@@ -169,4 +170,32 @@ body span {
 .restaurant__card--contain .card__info--img {
   height: 21px;
   width: 22px;
+}
+
+footer {
+  background-color: #353535;
+  padding: 15px 0px 15px 0px;
+}
+footer p {
+  color: white;
+  margin: 5px 0px 5px 0px;
+}
+footer .blockfooter {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+footer .blockfooter__logo {
+  width: 138px;
+  margin-bottom: 15px;
+}
+footer .blockfooter__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+footer .blockfooter__content--img {
+  height: 13px;
+  width: 11px;
 }/*# sourceMappingURL=home-style.css.map */

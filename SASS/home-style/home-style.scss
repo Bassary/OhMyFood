@@ -7,6 +7,8 @@
 $main-color: #9356DC;
 $second-color: #FF79DA;
 $third-color: #99E2D0;
+$footer-color:#353535;
+
 
 $color-card: #F6F6F6;
 $background-1: white;
@@ -142,6 +144,10 @@ body {
     }
 }
 
+// Main **************************************
+
+// container fonctionnement ***
+
 .fonctionnement {
     display: flex;
     flex-direction: column;
@@ -184,11 +190,14 @@ body {
     }
 }
 
+// container Restaurant ***
+
 .restaurant {
     display: flex;
     flex-direction: column;
     background-color: $color-card;
     gap: 15px;
+    padding-bottom: 60px;
 
     p { 
         font-size: 17px;
@@ -239,6 +248,42 @@ body {
             &--img {
                 height: 21px;
                 width: 22px;
+            }
+        }
+    }
+}
+
+// Footer ***************************
+
+footer {
+    background-color: $footer-color;
+    padding: 15px 0px 15px 0px;
+
+
+    p {
+        color: white;
+        margin: 5px 0px 5px 0px;
+    }
+
+    .blockfooter {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+
+        &__logo {
+            width: 138px;
+            margin-bottom: 15px;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+
+            &--img {
+                height: 13px;
+                width: 11px;
             }
         }
     }
