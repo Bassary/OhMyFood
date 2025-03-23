@@ -25,38 +25,40 @@
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
             </div>
-            <button class="headerReserver__btn" href="#restaurant">Explorer nos restaurants</button>
+            <a href="#restaurant">
+                <button class="headerReserver__btn" href="#restaurant">Explorer nos restaurants</button>
+            </a>
         </article>
     </header>
 
     <main>
         <section class="fonctionnement">
             <h2>Fonctionnement</h2>
-            <div class="fonctionnement__card">
+            <a href="#" class="fonctionnement__card">
                 <div class="fonctionnement__card--number">1</div>
                 <div class="fonctionnement__card--logo-text">
                     <img src="images/logo/mobile-screen-button.svg" alt="logo d'un téléphone portable">
                     <p><span>Choisissez un restaurant</span></p>
                 </div>
-            </div>
-            <div class="fonctionnement__card">
+            </a>
+            <a href="#" class="fonctionnement__card">
                 <div class="fonctionnement__card--number">2</div>
                 <div class="fonctionnement__card--logo-text">
                     <img src="images/logo/list-ul.svg" alt="logo d'un téléphone portable">
                     <p><span>Composez votre menu</span></p>
                 </div>
-            </div>
-            <div class="fonctionnement__card">
+            </a>
+            <a href="#" class="fonctionnement__card">
                 <div class="fonctionnement__card--number">3</div>
                 <div class="fonctionnement__card--logo-text">
                     <img src="images/logo/store.svg" alt="logo d'un téléphone portable">
                     <p><span>Déguster au restaurant</span></p>
                 </div>
-            </div>
+            </a>
         </section>
-        <section class="restaurant">
+        <section id="restaurant" class="restaurant">
             <h2>Restaurants</h2>
-            <div class="restaurant__card">
+            <a href="#" class="restaurant__card">
                 <div class="restaurant__card--nouveau">Nouveau</div>
                 <article class="restaurant__card--contain">
                      <img class="restaurant__card--contain-image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo du restaurant la palette du goût">
@@ -68,8 +70,8 @@
                         <img class="card__info--img" src="images/logo/heart=default.svg" alt="logo coeur non rempli">
                     </div>
                 </article>
-            </div>
-            <div class="restaurant__card">
+            </a>
+            <a href="#" class="restaurant__card">
                 <div class="restaurant__card--nouveau">Nouveau</div>
                 <article class="restaurant__card--contain">
                      <img class="restaurant__card--contain-image" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo du restaurant la note enchantée">
@@ -81,8 +83,8 @@
                         <img class="card__info--img" src="images/logo/heart=default.svg" alt="logo coeur non rempli">
                     </div>
                 </article>
-            </div>
-            <div class="restaurant__card">
+            </a>
+            <a href="#" class="restaurant__card">
                 <!-- <div class="restaurant__card--nouveau">Nouveau</div> -->
                 <article class="restaurant__card--contain">
                      <img class="restaurant__card--contain-image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo du restaurant à la française">
@@ -94,7 +96,8 @@
                         <img class="card__info--img" src="images/logo/heart=default.svg" alt="logo coeur non rempli">
                     </div>
                 </article>
-            </div><div class="restaurant__card">
+            </a>
+            <a href="#" class="restaurant__card">
                 <!-- <div class="restaurant__card--nouveau">Nouveau</div> -->
                 <article class="restaurant__card--contain">
                      <img class="restaurant__card--contain-image" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo du restaurant le délice des sens">
@@ -106,22 +109,25 @@
                         <img class="card__info--img" src="images/logo/heart=default.svg" alt="logo coeur non rempli">
                     </div>
                 </article>
-            </div>
+            </a>
         </section>
     </main>
     <footer>
         <div class="blockfooter">
             <img class="blockfooter__logo" src="images/logo/ohmyfood-white.svg" alt="logo de la marque ohmyfood">
-            <div class="blockfooter__content">
-                <img class="blockfooter__content--img" src="images/logo/couvert.svg" alt="logo d'un jeu de couvert">
-                <p><span>Proposer un restaurant</span></p>
-            </div>
-            <div class="blockfooter__content">
-                <img class="blockfooter__content--img" src="images/logo/hand-check.svg" alt="logo de mains qui se serts entre elles">
-                <p><span>Devenire partenaire</span></p>
-            </div>
-            <p><span>Mentions légales</span></p>
-            <p><span>Contact</span></p>
+            <ul>
+                <div class="blockfooter__content">
+                    <img class="blockfooter__content--img" src="images/logo/couvert.svg" alt="logo d'un jeu de couvert">
+                    <li><a href="#"><span>Proposer un restaurant</span></a></li>
+                </div>
+
+                <div class="blockfooter__content">
+                    <img class="blockfooter__content--img" src="images/logo/hand-check.svg" alt="logo de mains qui se serts entre elles">
+                    <li><a href="#"><span>Devenire partenaire</span></a></li>
+                </div>
+                <li><a href="#"><span>Mentions légales</span></a></li>
+                <li><a href="#"><span>Contact</span></a></li>
+            </ul>    
         </div>
     </footer>
     
