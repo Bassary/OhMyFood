@@ -34,6 +34,7 @@
     <main>
         <section class="fonctionnement">
             <h2>Fonctionnement</h2>
+            <div class="fonctionnement__flex">
             <a href="#" class="fonctionnement__card">
                 <div class="fonctionnement__card--number">1</div>
                 <div class="fonctionnement__card--logo-text">
@@ -55,9 +56,11 @@
                     <p><span>Déguster au restaurant</span></p>
                 </div>
             </a>
+            </div>
         </section>
         <section id="restaurant" class="restaurant">
             <h2>Restaurants</h2>
+            <div class="restaurant__grid">
             <a href="#" class="restaurant__card">
                 <div class="restaurant__card--nouveau"><span>Nouveau</span></div>
                 <article class="restaurant__card--contain">
@@ -122,23 +125,27 @@
                     </div>
                 </article>
             </a>
+            </div>
         </section>
     </main>
     <footer>
         <div class="blockfooter">
             <img class="blockfooter__logo" src="images/logo/ohmyfood-white.svg" alt="logo de la marque ohmyfood">
             <ul>
-                <div class="blockfooter__content">
+                <div class="blockfooter__flex-1">
+                    <div class="blockfooter__content">
                     <img class="blockfooter__content--img" src="images/logo/couvert.svg" alt="logo d'un jeu de couvert">
                     <li><a href="#"><span>Proposer un restaurant</span></a></li>
-                </div>
-
-                <div class="blockfooter__content">
+                    </div>
+                    <div class="blockfooter__content">
                     <img class="blockfooter__content--img" src="images/logo/hand-check.svg" alt="logo de mains qui se serts entre elles">
                     <li><a href="#"><span>Devenire partenaire</span></a></li>
+                    </div>
                 </div>
-                <li><a href="#"><span>Mentions légales</span></a></li>
-                <li><a href="#"><span>Contact</span></a></li>
+                <div class="blockfooter__flex-2">
+                    <li><a href="#"><span>Mentions légales</span></a></li>
+                    <li><a href="#"><span>Contact</span></a></li>
+                </div>
             </ul>    
         </div>
     </footer>
