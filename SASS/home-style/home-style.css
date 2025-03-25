@@ -251,7 +251,6 @@ footer .blockfooter__content--img {
     padding-top: 30px;
   }
   .fonctionnement__flex {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-left: 25px;
