@@ -32,7 +32,8 @@ $color-button: linear-gradient(2deg, $main-color -11.44%, $second-color 123.93%)
 
 @mixin button-hover {
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-    opacity: 0.8;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
 }
 
 @mixin card {
@@ -168,12 +169,29 @@ body {
 
     &__btn {
         @include button();
-        transition: ease-in-out 300ms;
+        position: relative;
+        z-index: 1;
 
         &:hover {
-            @include button-hover();
+            &::after {
+                opacity: 1;
+            }
+            
         }
 
+    }
+
+    ::after {
+        @include button-hover();
+        position: absolute;
+        z-index: -1;
+        content: "";
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: ease-in-out 200ms;
     }
 
 }
