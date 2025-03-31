@@ -6,7 +6,9 @@ body p {
   font-weight: 300;
   font-size: 19px;
 }
-body h1, body h2, body h3 {
+body h1,
+body h2,
+body h3 {
   font-weight: 700;
   font-size: 24px;
   margin: 30px 15px 0px 15px;
@@ -23,7 +25,8 @@ body ul {
   padding: 0;
   margin: 0;
 }
-body a, body li {
+body a,
+body li {
   cursor: pointer;
   text-decoration: none;
   color: black;
@@ -88,7 +91,7 @@ body footer a {
   position: relative;
   z-index: 1;
 }
-.headerReserver__btn:hover::after {
+.headerReserver__btn:hover ::after {
   opacity: 1;
 }
 .headerReserver ::after {
@@ -223,7 +226,8 @@ body footer a {
   display: flex;
   flex-direction: column;
 }
-.restaurant__card--contain .card__info--text h3, .restaurant__card--contain .card__info--text p {
+.restaurant__card--contain .card__info--text h3,
+.restaurant__card--contain .card__info--text p {
   margin: 0;
 }
 
