@@ -1,1 +1,120 @@
-/*# sourceMappingURL=menu-style.css.map */
+body {
+  margin: 0;
+  font-family: "roboto", sans-serif;
+}
+body h1, body h2, body h3, body p {
+  margin: 0;
+}
+body h1 {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+}
+body h2 {
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+body h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+body p {
+  font-weight: 300;
+  font-size: 15px;
+}
+body strong {
+  font-weight: 700;
+  font-size: 15px;
+}
+body span {
+  font-weight: 500;
+  font-size: 16px;
+}
+body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body a, body li {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+body footer li {
+  margin: 5px 0px 5px 0px;
+}
+body footer a {
+  color: white;
+}
+
+.headernav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  background: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+}
+.headernav__arrow {
+  display: flex;
+}
+.headernav__logo--img {
+  width: 163px;
+}
+
+.blockmain__img {
+  width: 100%;
+}
+.blockmain__menu {
+  background-color: #F6F6F6;
+  border-radius: 20px 20px 0px 0px;
+  padding: 15px;
+  transform: translateY(-35px);
+}
+.blockmain__menu--resto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blockmain__menu--resto .heart-active,
+.blockmain__menu--resto .heart-default {
+  width: 21px;
+  height: 22px;
+  margin-right: 10px;
+}
+.blockmain__menu--resto .heart-active {
+  position: absolute;
+  opacity: 0;
+  transition: ease-in 150ms;
+}
+.blockmain__menu--resto .heart-active:hover {
+  opacity: 1;
+}
+.blockmain .blockcard__title {
+  display: flex;
+  flex-direction: column;
+}
+.blockmain .blockcard__title--barredown {
+  border: 2px solid #99E2D0;
+  width: 37px;
+  margin-top: 5px;
+}
+.blockmain .blockcard .cards {
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+}
+.blockmain .blockcard .cards__containe {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}/*# sourceMappingURL=menu-style.css.map */
