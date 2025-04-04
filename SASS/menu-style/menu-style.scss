@@ -5,6 +5,8 @@
 $color-card: #F6F6F6;
 $main-color: #9356DC;
 $second-color: #FF79DA;
+$third-color: #99E2D0;
+
 $footer-color: #353535;
 
 $color-button: linear-gradient(2deg, $main-color -11.44%, $second-color 123.93%);
@@ -80,6 +82,8 @@ body {
     h3,
     p {
         margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     h1 {
@@ -223,17 +227,53 @@ body {
 
         .cards {
             background-color: white;
-            padding: 15px;
+            height: 73px;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: space-between;
             margin-top: 15px;
             border-radius: 15px;
+            cursor: pointer;
+            overflow: hidden;
             @include shadow-card();
 
+            &:hover .cards__check .cards__check--img {
+                width: 85px;
+            }
+
             &__containe {
+                width: 100%;
+                padding: 15px;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            &__check {
                 display: flex;
-                align-items: flex-end;
-                justify-content: space-between;
+                justify-content: center;
+                border-radius: 0px 15px 15px 0px;
+                transition: ease-in-out 270ms;
+
+                &--price {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    padding: 15px;
+                    padding-left: 0;
+                }
+
+                &--img {
+                    display: flex;
+                    justify-content: center;
+                    height: 100%;
+                    background: $third-color;
+                    width: 0;
+                    transition: ease-in-out 250ms;
+
+                    .check-logo {
+                        width: 20px;
+                    }
+                }
             }
         }
     }
@@ -247,6 +287,8 @@ body {
         width: 186px;
     }
 }
+
+
 
 // Footer **********************************
 

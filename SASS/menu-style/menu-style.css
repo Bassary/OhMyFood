@@ -7,6 +7,8 @@ body h2,
 body h3,
 body p {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 body h1 {
   font-family: "Shrikhand", serif;
@@ -119,17 +121,48 @@ body footer a {
 }
 .blockmain .blockcard .cards {
   background-color: white;
-  padding: 15px;
+  height: 73px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   margin-top: 15px;
   border-radius: 15px;
+  cursor: pointer;
+  overflow: hidden;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
 }
+.blockmain .blockcard .cards:hover .cards__check .cards__check--img {
+  width: 85px;
+}
 .blockmain .blockcard .cards__containe {
+  width: 100%;
+  padding: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.blockmain .blockcard .cards__check {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  justify-content: center;
+  border-radius: 0px 15px 15px 0px;
+  transition: ease-in-out 270ms;
+}
+.blockmain .blockcard .cards__check--price {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
+  padding-left: 0;
+}
+.blockmain .blockcard .cards__check--img {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background: #99E2D0;
+  width: 0;
+  transition: ease-in-out 250ms;
+}
+.blockmain .blockcard .cards__check--img .check-logo {
+  width: 20px;
 }
 .blockmain a {
   text-align: center;
