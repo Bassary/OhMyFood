@@ -149,30 +149,33 @@ body footer a {
   animation: afficheCards 3000ms;
 }
 .blockmain .blockcard .cards__1 {
-  animation-duration: 333.3333333333ms;
+  animation-duration: 300ms;
 }
 .blockmain .blockcard .cards__2 {
-  animation-duration: 666.6666666667ms;
+  animation-duration: 600ms;
 }
 .blockmain .blockcard .cards__3 {
-  animation-duration: 1000ms;
+  animation-duration: 900ms;
 }
 .blockmain .blockcard .cards__4 {
-  animation-duration: 1333.3333333333ms;
+  animation-duration: 1200ms;
 }
 .blockmain .blockcard .cards__5 {
-  animation-duration: 1666.6666666667ms;
+  animation-duration: 1500ms;
 }
 .blockmain .blockcard .cards__6 {
-  animation-duration: 2000ms;
+  animation-duration: 1800ms;
 }
 .blockmain .blockcard .cards__7 {
-  animation-duration: 2333.3333333333ms;
+  animation-duration: 2100ms;
 }
 .blockmain .blockcard .cards__8 {
-  animation-duration: 2666.6666666667ms;
+  animation-duration: 2400ms;
 }
 .blockmain .blockcard .cards__9 {
+  animation-duration: 2700ms;
+}
+.blockmain .blockcard .cards__10 {
   animation-duration: 3000ms;
 }
 .blockmain .blockcard .cards:hover .cards__check .cards__check--img {
