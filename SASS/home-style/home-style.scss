@@ -128,6 +128,11 @@ body {
         color: black;
     }
 
+    footer {
+        background: $footer-color;
+        padding: 15px;
+    }
+
     footer li {
         margin: 5px 0px 5px 0px;
     }
@@ -140,34 +145,59 @@ body {
 
 // loader ****************
 
-// #loader {
-//     width: 100vw;
-//     height: 100vh;
-//     background: white;
-//     position: absolute;
-//     position: fixed;
-//     z-index: 10000;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
-//     gap: 30px;
+.loader {
+    width: 100vw;
+    height: 100vh;
+    background: $color-card;
+    position: absolute;
+    position: fixed;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    visibility: hidden;
+    animation: visibility 3s linear;
 
-//     &__logo {
-//         animation: loader linear infinite;
-//     }
-// }
+    &__marque {
+        opacity: 0.1;
+    }
+
+    &__logo {
+        width: 80px;
+        height: 80px;
+        animation: loader 2.2s ease-in-out infinite;
+    }
+}
 
 
-// @keyframes loader {
-//     from {
-//         transform: rotate(0deg);
-//     }
+@keyframes loader {
 
-//     to {
-//         transform: rotate(360deg);
-//     }
-// }
+    0%,
+    5% {
+        transform: scale(0.8) rotate(0deg);
+    }
+
+    50%,
+    55% {
+        transform: scale(1.5) rotate(180deg);
+    }
+
+    100% {
+        transform: scale(0.8) rotate(360deg);
+    }
+}
+
+@keyframes visibility {
+    from {
+        visibility: visible;
+    }
+
+    to {
+        visibility: hidden;
+    }
+}
 
 
 // Header ************************
@@ -356,40 +386,35 @@ body {
 
 // Footer ***************************
 
-footer {
-    background-color: $footer-color;
-    padding: 15px 0px 15px 0px;
 
-    .blockfooter {
+.blockfooter {
+    display: flex;
+    flex-direction: column;
+
+    &__flex-1,
+    &__flex-2 {
         display: flex;
         flex-direction: column;
-        margin-left: 15px;
+    }
 
+    &__logo {
+        width: 138px;
+        margin-bottom: 15px;
+    }
 
-        &__flex-1,
-        &__flex-2 {
-            display: flex;
-            flex-direction: column;
-        }
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
 
-        &__logo {
-            width: 138px;
-            margin-bottom: 15px;
-        }
-
-        &__content {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 5px;
-
-            &--img {
-                height: 13px;
-                width: 11px;
-            }
+        &--img {
+            height: 13px;
+            width: 11px;
         }
     }
 }
+
 
 // Media queries *******************************
 
@@ -425,17 +450,16 @@ footer {
         gap: 30px
     }
 
-    footer .blockfooter {
+    .blockfooter {
         flex-direction: row-reverse;
-        margin-right: 15px;
-        gap: 80px;
+        gap: 32px;
         height: 114px;
 
         &__flex-1,
         &__flex-2 {
             flex-direction: row;
             align-items: center;
-            gap: 15px;
+            gap: 10px;
         }
 
         .blockfooter__logo {
@@ -447,7 +471,7 @@ footer {
     body ul {
         display: flex;
         align-items: center;
-        gap: 30px
+        gap: 10px
     }
 
 

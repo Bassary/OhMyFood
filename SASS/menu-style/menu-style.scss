@@ -6,13 +6,12 @@ $color-card: #F6F6F6;
 $main-color: #9356DC;
 $second-color: #FF79DA;
 $third-color: #99E2D0;
-
 $footer-color: #353535;
-
 $color-button: linear-gradient(2deg, $main-color -11.44%, $second-color 123.93%);
 
-
-
+$num-cards: 9;
+$anim-dur-cards: 3000ms;
+$delay-cards: $anim-dur-cards / $num-cards;
 
 // mixins ***
 
@@ -69,6 +68,19 @@ $color-button: linear-gradient(2deg, $main-color -11.44%, $second-color 123.93%)
         &::after {
             opacity: 1;
         }
+    }
+}
+
+// @keyframes ***
+
+// cards
+@keyframes afficheCards {
+    0% {
+        transform: translateX(-320px);
+    }
+
+    100% {
+        transform: translateX(0);
     }
 }
 
@@ -136,6 +148,11 @@ body {
         color: black;
     }
 
+    footer {
+        background: $footer-color;
+        padding: 15px;
+    }
+
     footer li {
         margin: 5px 0px 5px 0px;
     }
@@ -180,6 +197,11 @@ body {
     flex-direction: column;
     margin-bottom: -35px;
 
+    a {
+        display: flex;
+        justify-content: center;
+    }
+
     &__img {
         width: 100%;
     }
@@ -220,6 +242,7 @@ body {
 
     .blockcard {
 
+
         &__title {
             display: flex;
             flex-direction: column;
@@ -240,6 +263,16 @@ body {
             cursor: pointer;
             overflow: hidden;
             @include shadow-card();
+            animation: afficheCards $anim-dur-cards;
+
+            @for $i from 1 through $num-cards {
+
+                &__#{$i} {
+                    animation-duration: $delay-cards * $i;
+                }
+            }
+
+
 
             &:hover .cards__check .cards__check--img {
                 width: 65px;
@@ -282,11 +315,6 @@ body {
         }
     }
 
-    a {
-        display: flex;
-        justify-content: center;
-    }
-
     .btn {
         @include button();
         width: 186px;
@@ -297,37 +325,31 @@ body {
 
 // Footer **********************************
 
-footer {
-    background-color: $footer-color;
-    padding: 15px 0px 15px 0px;
 
-    .blockfooter {
+.blockfooter {
+    display: flex;
+    flex-direction: column;
+
+    &__flex-1,
+    &__flex-2 {
         display: flex;
         flex-direction: column;
-        margin-left: 15px;
+    }
 
+    &__logo {
+        width: 138px;
+        margin-bottom: 15px;
+    }
 
-        &__flex-1,
-        &__flex-2 {
-            display: flex;
-            flex-direction: column;
-        }
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
 
-        &__logo {
-            width: 138px;
-            margin-bottom: 15px;
-        }
-
-        &__content {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 5px;
-
-            &--img {
-                height: 13px;
-                width: 11px;
-            }
+        &--img {
+            height: 13px;
+            width: 11px;
         }
     }
 }
@@ -357,17 +379,16 @@ footer {
         width: 633px;
     }
 
-    footer .blockfooter {
+    .blockfooter {
         flex-direction: row-reverse;
-        margin-right: 15px;
-        gap: 80px;
+        gap: 32px;
         height: 114px;
 
         &__flex-1,
         &__flex-2 {
             flex-direction: row;
             align-items: center;
-            gap: 15px;
+            gap: 10px;
         }
 
         .blockfooter__logo {
@@ -379,7 +400,7 @@ footer {
     body ul {
         display: flex;
         align-items: center;
-        gap: 30px
+        gap: 10px
     }
 }
 

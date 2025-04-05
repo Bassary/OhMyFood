@@ -1,3 +1,11 @@
+@keyframes afficheCards {
+  0% {
+    transform: translateX(-320px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 body {
   margin: 0;
   font-family: "roboto", sans-serif;
@@ -49,6 +57,10 @@ body li {
   text-decoration: none;
   color: black;
 }
+body footer {
+  background: #353535;
+  padding: 15px;
+}
 body footer li {
   margin: 5px 0px 5px 0px;
 }
@@ -77,6 +89,10 @@ body footer a {
   display: flex;
   flex-direction: column;
   margin-bottom: -35px;
+}
+.blockmain a {
+  display: flex;
+  justify-content: center;
 }
 .blockmain__img {
   width: 100%;
@@ -130,6 +146,34 @@ body footer a {
   cursor: pointer;
   overflow: hidden;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+  animation: afficheCards 3000ms;
+}
+.blockmain .blockcard .cards__1 {
+  animation-duration: 333.3333333333ms;
+}
+.blockmain .blockcard .cards__2 {
+  animation-duration: 666.6666666667ms;
+}
+.blockmain .blockcard .cards__3 {
+  animation-duration: 1000ms;
+}
+.blockmain .blockcard .cards__4 {
+  animation-duration: 1333.3333333333ms;
+}
+.blockmain .blockcard .cards__5 {
+  animation-duration: 1666.6666666667ms;
+}
+.blockmain .blockcard .cards__6 {
+  animation-duration: 2000ms;
+}
+.blockmain .blockcard .cards__7 {
+  animation-duration: 2333.3333333333ms;
+}
+.blockmain .blockcard .cards__8 {
+  animation-duration: 2666.6666666667ms;
+}
+.blockmain .blockcard .cards__9 {
+  animation-duration: 3000ms;
 }
 .blockmain .blockcard .cards:hover .cards__check .cards__check--img {
   width: 65px;
@@ -163,10 +207,6 @@ body footer a {
 }
 .blockmain .blockcard .cards__check--img .check-logo {
   width: 20px;
-}
-.blockmain a {
-  display: flex;
-  justify-content: center;
 }
 .blockmain .btn {
   border-radius: 25px;
@@ -205,30 +245,25 @@ body footer a {
   opacity: 1;
 }
 
-footer {
-  background-color: #353535;
-  padding: 15px 0px 15px 0px;
-}
-footer .blockfooter {
-  display: flex;
-  flex-direction: column;
-  margin-left: 15px;
-}
-footer .blockfooter__flex-1, footer .blockfooter__flex-2 {
+.blockfooter {
   display: flex;
   flex-direction: column;
 }
-footer .blockfooter__logo {
+.blockfooter__flex-1, .blockfooter__flex-2 {
+  display: flex;
+  flex-direction: column;
+}
+.blockfooter__logo {
   width: 138px;
   margin-bottom: 15px;
 }
-footer .blockfooter__content {
+.blockfooter__content {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 5px;
 }
-footer .blockfooter__content--img {
+.blockfooter__content--img {
   height: 13px;
   width: 11px;
 }
@@ -248,24 +283,23 @@ footer .blockfooter__content--img {
   .blockcard {
     width: 633px;
   }
-  footer .blockfooter {
+  .blockfooter {
     flex-direction: row-reverse;
-    margin-right: 15px;
-    gap: 80px;
+    gap: 32px;
     height: 114px;
   }
-  footer .blockfooter__flex-1, footer .blockfooter__flex-2 {
+  .blockfooter__flex-1, .blockfooter__flex-2 {
     flex-direction: row;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
   }
-  footer .blockfooter .blockfooter__logo {
+  .blockfooter .blockfooter__logo {
     margin: 0px;
   }
   body ul {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
   }
 }
 @media (min-width: 1055px) {

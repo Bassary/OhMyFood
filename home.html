@@ -10,10 +10,10 @@
     <title>ohmyfood-home</title>
 </head>
 <body>
-    <!-- <div id="loader">
+    <div class="loader">
         <img class="loader__logo" src="images/logo/loader.svg" alt="loader">
-        <img src="images/logo/ohmyfood@2x.svg" alt="ohmyfood">    
-    </div> -->
+        <img class="loader__marque" src="images/logo/ohmyfood@2x.svg" alt="ohmyfood">    
+    </div>
     <header>
         <div class="headertop">
             <div class="headertop__shadow">
@@ -98,7 +98,6 @@
                 </article>
             </a>
             <a href="#" class="restaurant__card">
-                <!-- <div class="restaurant__card--nouveau">Nouveau</div> -->
                 <article class="restaurant__card--contain">
                      <img class="restaurant__card--contain-image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo du restaurant à la française">
                     <div class="card__info">
@@ -114,7 +113,6 @@
                 </article>
             </a>
             <a href="#" class="restaurant__card">
-                <!-- <div class="restaurant__card--nouveau">Nouveau</div> -->
                 <article class="restaurant__card--contain">
                      <img class="restaurant__card--contain-image" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo du restaurant le délice des sens">
                     <div class="card__info">
@@ -132,27 +130,28 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="blockfooter">
-            <img class="blockfooter__logo" src="images/logo/ohmyfood-white.svg" alt="logo de la marque ohmyfood">
+    <footer class="blockfooter">
+        <img class="blockfooter__logo" src="images/logo/ohmyfood-white.svg" alt="logo de la marque ohmyfood">
+        <div class="blockfooter__flex-1">
             <ul>
-                <div class="blockfooter__flex-1">
-                    <div class="blockfooter__content">
+                <li class="blockfooter__content">
                     <img class="blockfooter__content--img" src="images/logo/couvert.svg" alt="logo d'un jeu de couvert">
-                    <li><a href="#"><span>Proposer un restaurant</span></a></li>
-                    </div>
-                    <div class="blockfooter__content">
+                    <a href="#"><span>Proposer un restaurant</span></a>
+                </li>
+            </ul>
+            <ul>
+                <li class="blockfooter__content">
                     <img class="blockfooter__content--img" src="images/logo/hand-check.svg" alt="logo de mains qui se serts entre elles">
-                    <li><a href="#"><span>Devenire partenaire</span></a></li>
-                    </div>
-                </div>
-                <div class="blockfooter__flex-2">
-                    <li><a href="#"><span>Mentions légales</span></a></li>
-                    <li><a href="#"><span>Contact</span></a></li>
-                </div>
-            </ul>    
+                    <a href="#"><span>Devenire partenaire</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="blockfooter__flex-2">
+            <ul>
+                <li><a href="#"><span>Mentions légales</span></a></li>
+                <li><a href="#"><span>Contact</span></a></li>
+            </ul>
         </div>
     </footer>
-    
 </body>
 </html>
