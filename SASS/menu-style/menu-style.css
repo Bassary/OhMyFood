@@ -1,9 +1,11 @@
 @keyframes afficheCards {
   0% {
     transform: translateX(-320px);
+    opacity: 0;
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 body {
@@ -146,37 +148,37 @@ body footer a {
   cursor: pointer;
   overflow: hidden;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
-  animation: afficheCards 3000ms;
+  animation: afficheCards 500ms backwards;
 }
 .blockmain .blockcard .cards__1 {
-  animation-duration: 300ms;
+  animation-delay: 83.3333333333ms;
 }
 .blockmain .blockcard .cards__2 {
-  animation-duration: 600ms;
+  animation-delay: 166.6666666667ms;
 }
 .blockmain .blockcard .cards__3 {
-  animation-duration: 900ms;
+  animation-delay: 250ms;
 }
 .blockmain .blockcard .cards__4 {
-  animation-duration: 1200ms;
+  animation-delay: 333.3333333333ms;
 }
 .blockmain .blockcard .cards__5 {
-  animation-duration: 1500ms;
+  animation-delay: 416.6666666667ms;
 }
 .blockmain .blockcard .cards__6 {
-  animation-duration: 1800ms;
+  animation-delay: 500ms;
 }
 .blockmain .blockcard .cards__7 {
-  animation-duration: 2100ms;
+  animation-delay: 583.3333333333ms;
 }
 .blockmain .blockcard .cards__8 {
-  animation-duration: 2400ms;
+  animation-delay: 666.6666666667ms;
 }
 .blockmain .blockcard .cards__9 {
-  animation-duration: 2700ms;
+  animation-delay: 750ms;
 }
 .blockmain .blockcard .cards__10 {
-  animation-duration: 3000ms;
+  animation-delay: 833.3333333333ms;
 }
 .blockmain .blockcard .cards:hover .cards__check .cards__check--img {
   width: 65px;
