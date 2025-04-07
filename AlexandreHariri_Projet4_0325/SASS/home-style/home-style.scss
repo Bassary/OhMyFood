@@ -501,8 +501,8 @@ body {
 
 }
 
-// large desktop (more/equale than 1240px)
-@media (min-width: 1240px) {
+// large desktop (more/equale than 1280px)
+@media (min-width: 1280px) {
 
     .fonctionnement {
 
@@ -510,7 +510,7 @@ body {
             margin-left: 0;
         }
 
-        max-width: 1240px;
+        max-width: 1280px;
         margin: auto;
 
         &__flex {
@@ -521,13 +521,13 @@ body {
     .restaurant {
 
         h2 {
-            width: 1240px;
+            width: 1280px;
             margin: auto;
             padding-top: 30px;
         }
 
         &__grid {
-            width: 1240px;
+            width: 1280px;
             margin: auto;
         }
 

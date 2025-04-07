@@ -366,9 +366,9 @@ body footer a {
     gap: 10px;
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .fonctionnement {
-    max-width: 1240px;
+    max-width: 1280px;
     margin: auto;
   }
   .fonctionnement h2 {
@@ -378,12 +378,12 @@ body footer a {
     margin: 0;
   }
   .restaurant h2 {
-    width: 1240px;
+    width: 1280px;
     margin: auto;
     padding-top: 30px;
   }
   .restaurant__grid {
-    width: 1240px;
+    width: 1280px;
     margin: auto;
   }
   .restaurant__card {
