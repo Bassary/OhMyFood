@@ -376,6 +376,7 @@ body footer a {
   }
   .fonctionnement__flex {
     margin: 0;
+    padding-left: 10px;
   }
   .restaurant h2 {
     width: 1240px;
