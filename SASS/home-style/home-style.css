@@ -323,7 +323,7 @@ body footer a {
   width: 11px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
   .headertop__shadow,
   .headertop__localisation {
     box-shadow: none;
