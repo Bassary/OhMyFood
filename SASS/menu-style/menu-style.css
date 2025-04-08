@@ -148,37 +148,37 @@ body footer a {
   cursor: pointer;
   overflow: hidden;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
-  animation: afficheCards 500ms backwards;
+  animation: afficheCards 3500ms ease;
 }
 .blockmain .blockcard .cards__1 {
-  animation-delay: 83.3333333333ms;
+  animation-duration: 350ms;
 }
 .blockmain .blockcard .cards__2 {
-  animation-delay: 166.6666666667ms;
+  animation-duration: 700ms;
 }
 .blockmain .blockcard .cards__3 {
-  animation-delay: 250ms;
+  animation-duration: 1050ms;
 }
 .blockmain .blockcard .cards__4 {
-  animation-delay: 333.3333333333ms;
+  animation-duration: 1400ms;
 }
 .blockmain .blockcard .cards__5 {
-  animation-delay: 416.6666666667ms;
+  animation-duration: 1750ms;
 }
 .blockmain .blockcard .cards__6 {
-  animation-delay: 500ms;
+  animation-duration: 2100ms;
 }
 .blockmain .blockcard .cards__7 {
-  animation-delay: 583.3333333333ms;
+  animation-duration: 2450ms;
 }
 .blockmain .blockcard .cards__8 {
-  animation-delay: 666.6666666667ms;
+  animation-duration: 2800ms;
 }
 .blockmain .blockcard .cards__9 {
-  animation-delay: 750ms;
+  animation-duration: 3150ms;
 }
 .blockmain .blockcard .cards__10 {
-  animation-delay: 833.3333333333ms;
+  animation-duration: 3500ms;
 }
 .blockmain .blockcard .cards:hover .cards__check .cards__check--img {
   width: 65px;

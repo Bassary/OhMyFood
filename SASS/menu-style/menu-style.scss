@@ -10,8 +10,8 @@ $footer-color: #353535;
 $color-button: linear-gradient(2deg, $main-color -11.44%, $second-color 123.93%);
 
 $num-cards: 10;
-$anim-dur-cards: 500ms;
-$delay-cards: $anim-dur-cards / 6;
+$anim-dur-cards: 3500ms;
+$delay-cards: $anim-dur-cards / $num-cards;
 
 // mixins ***
 
@@ -266,12 +266,12 @@ body {
             cursor: pointer;
             overflow: hidden;
             @include shadow-card();
-            animation: afficheCards $anim-dur-cards backwards;
+            animation: afficheCards $anim-dur-cards ease;
 
             @for $i from 1 through $num-cards {
 
                 &__#{$i} {
-                    animation-delay: $delay-cards * $i;
+                    animation-duration: $delay-cards * $i;
                 }
             }
 
